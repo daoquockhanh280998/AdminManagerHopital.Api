@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>398b6864-6e99-4aa5-bc4c-77e2fdda142a</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.7" />
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CS.EF\CS.EF.csproj" />
+    <ProjectReference Include="..\TEK.Core.App\TEK.Core.App.csproj" />
+    <ProjectReference Include="..\TEK.Core.Calendar.Domain\TEK.Core.Calendar.Domain.csproj" />
+    <ProjectReference Include="..\TEK.Core.Service\TEK.Core.Service.csproj" />
+    <ProjectReference Include="..\TEK.Core.UoW\TEK.Core.UoW.csproj" />
+  </ItemGroup>
+
+</Project>
